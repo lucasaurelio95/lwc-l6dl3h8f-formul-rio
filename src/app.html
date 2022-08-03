@@ -1,0 +1,36 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_large">Formulário Básico</h1>
+
+
+
+
+
+		<!-- para cada um desses campos, vamos criar uma função que é chamada
+		atraves do evento
+
+		onchange -> Quando o campo sofre alteração no valor, ativa a função
+		-->
+		<!-- campo de primeiro nome -->
+		<lightning-input type="text" label=" Nome" name="Name" onchange={handleOnChangePrimeiro}>
+		</lightning-input>
+
+		<!-- campo de  sobrenome -->
+		<lightning-input type="text" label="Telefone" name="Phone" onchange={handleOnChangeSobrenome}>
+		</lightning-input>
+
+		<!-- campo de  telefone -->
+
+		<lightning-input type="text" label="Cpf" name="Cpf__c" onchange={handleOnChangeTelefone}></lightning-input>
+
+
+		<lightning-input type="text" label="Email" name="Email"></lightning-input>
+
+		<!-- Brand variant: Identifies the primary action in a group of buttons -->
+		<lightning-button variant="brand" label="Testar" title="Clique para salvar" onclick={Testar}
+			class="slds-m-left_x-small">
+		</lightning-button>
+
+
+	</div>
+</template>
